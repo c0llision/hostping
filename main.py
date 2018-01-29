@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+'''hostping'''
 import subprocess
 import platform
 
@@ -9,7 +10,7 @@ HOSTS = [
 ]
 
 
-def pingOk(sHost):
+def ping(sHost):
     try:
         subprocess.check_output("ping -{} 1 {}".format(
             'n' if platform.system().lower() == "windows" else 'c', sHost),
@@ -35,4 +36,4 @@ print("\n| Name           | IP              | Status")
 print("-------------------------------------------")
 for name, ip in HOSTS:
     print('| %-15s| %-16s| %6s' %
-          (name, ip, 'Online' if pingOk(ip) else 'Offline'))
+          (name, ip, 'Online' if ping(ip) else 'Offline'))
