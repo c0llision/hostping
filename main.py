@@ -31,6 +31,7 @@ def ping(sHost):
 # print('-' * name_len)
 # print(' ' * round((name_len - 4)/2) + 'name')
 
+
 print("\n| Name           | IP              | Status")
 print("-------------------------------------------")
 for name, ip in HOSTS:
