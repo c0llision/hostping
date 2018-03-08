@@ -32,8 +32,15 @@ def ping(sHost):
 # print(' ' * round((name_len - 4)/2) + 'name')
 
 
-print("\n| Name           | IP              | Status")
-print("-------------------------------------------")
-for name, ip in HOSTS:
-    print('| %-15s| %-16s| %6s' %
-          (name, ip, 'Online' if ping(ip) else 'Offline'))
+def main():
+    print("\n| Name           | IP              | Status")
+    print("-------------------------------------------")
+    for name, ip in HOSTS:
+        print('| %-15s| %-16s| %6s' %
+              (name, ip, 'Online' if ping(ip) else 'Offline'))
+
+
+try:
+    main()
+except KeyboardInterrupt:
+    pass
