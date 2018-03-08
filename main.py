@@ -5,8 +5,8 @@ import platform
 
 
 HOSTS = [
-    ['pi', '192.168.192.27'],
-    ['desktop', '192.168.2.2'],
+    ['pi', 'pi.c0llision'],
+    ['desktop', 'desktop.c0llision'],
 ]
 
 
