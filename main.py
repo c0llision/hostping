@@ -20,17 +20,6 @@ def ping(sHost):
 
     return True
 
-# figure out longest name and ip
-# name_len = 6
-# ip_len = 0
-# for name, ip in HOSTS:
-#     if len(name) > name_len:
-#         name_len = len(name)
-#     if len(ip) > ip_len:
-#         ip_len = len(ip)
-# print('-' * name_len)
-# print(' ' * round((name_len - 4)/2) + 'name')
-
 
 def main():
     print("\n| Name           | IP              | Status")
